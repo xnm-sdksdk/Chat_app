@@ -47,6 +47,8 @@ print("Server done binding to host and port successfully")
 
 print("")
 
+print("Server is waiting for incoming connection.")
+print("")
 # listen for our incoming connection, as a param (1) because we only want one connection to be established
 sckt.listen(1)
 
