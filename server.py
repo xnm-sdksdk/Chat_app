@@ -9,6 +9,9 @@ import time
 # gets the local host name of the device
 host = socket.gethostname()
 # print(host) prints the name of my machine
+print("Serve will start on host: ", host)
+
+port = 8080
 
 
 
