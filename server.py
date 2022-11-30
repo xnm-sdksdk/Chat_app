@@ -6,4 +6,10 @@ import sys
 import time
 
 
+# gets the local host name of the device
+host = socket.gethostname()
+# print(host) prints the name of my machine
+
+
+
 
