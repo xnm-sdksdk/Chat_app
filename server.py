@@ -11,6 +11,7 @@ host = socket.gethostname()
 # print(host) prints the name of my machine
 print("Serve will start on host: ", host)
 
+# makes the connection between devices; 8080 http alternative TCP UDP protocol 
 port = 8080
 
 
