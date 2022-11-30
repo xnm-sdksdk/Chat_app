@@ -51,5 +51,8 @@ print("")
 sckt.listen(1)
 
 
+# variables for connection and adress
+# the var connection is assigned to the socket itself, wich is the physical circuit coming from the client
+# var adress is assigned to the IP adress of the client
 
-
+connection, address = sckt.accept()
