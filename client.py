@@ -16,15 +16,16 @@ sckt.connect((host, port))
 print("Connected to chat server")
 
 
+while 1:
+    
+    # accept message and display it
+    incoming_message= sckt.recv(1024)
 
-# accept message and display it
-incoming_message= sckt.recv(1024)
+    # decode message
+    incoming_message = incoming_message.decode()
 
-# decode message
-incoming_message = incoming_message.decode()
-
-print("Server: ", incoming_message)
-print("")
+    print("Server: ", incoming_message)
+    print("")
 
 
 

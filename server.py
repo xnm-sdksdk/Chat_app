@@ -63,17 +63,19 @@ connection, address = sckt.accept()
 print(address, "Has connected to the server and is now online.")
 print("")
 
-# 
-message = str(input(">>"))
+# loop 
+while 1:
+    # 
+    message = str(input(">>"))
 
-# convert the message into bytes, the interface of sockets can only support bytes
-message = message.encode()
+    # convert the message into bytes, the interface of sockets can only support bytes
+    message = message.encode()
 
-# establish connection with client
-connection.send(message)
+    # establish connection with client
+    connection.send(message)
 
-print("Message has bem sent...")
-print("")
+    print("Message has bem sent...")
+    print("")
 
 
 
