@@ -15,7 +15,7 @@ sckt.connect((host, port))
 
 print("Connected to chat server")
 
-
+# loop to listen comms
 while 1:
     
     # accept message and display it

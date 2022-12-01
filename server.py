@@ -63,7 +63,7 @@ connection, address = sckt.accept()
 print(address, "Has connected to the server and is now online.")
 print("")
 
-# loop 
+# loop to send comms
 while 1:
     # 
     message = str(input(">>"))
