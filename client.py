@@ -33,7 +33,7 @@ while 1:
     message = message.encode()
 
     # establish connection with client
-    connection.send(message)
+    sckt.send(message)
 
     print("Message has bem sent...")
     print("")

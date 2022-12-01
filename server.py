@@ -78,7 +78,7 @@ while 1:
     print("")
     
     # accept message and display it
-    incoming_message= sckt.recv(1024)
+    incoming_message= connection.recv(1024)
 
     # decode message
     incoming_message = incoming_message.decode()
