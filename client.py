@@ -26,6 +26,17 @@ while 1:
 
     print("Server: ", incoming_message)
     print("")
+    
+    message = str(input(">>"))
+
+    # convert the message into bytes, the interface of sockets can only support bytes
+    message = message.encode()
+
+    # establish connection with client
+    connection.send(message)
+
+    print("Message has bem sent...")
+    print("")
 
 
 

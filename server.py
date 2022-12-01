@@ -76,6 +76,15 @@ while 1:
 
     print("Message has bem sent...")
     print("")
+    
+    # accept message and display it
+    incoming_message= sckt.recv(1024)
+
+    # decode message
+    incoming_message = incoming_message.decode()
+
+    print("Client: ", incoming_message)
+    print("")
 
 
 
