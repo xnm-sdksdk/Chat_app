@@ -17,10 +17,14 @@ print("Connected to chat server")
 
 
 
+# accept message and display it
+incoming_message= sckt.recv(1024)
 
+# decode message
+incoming_message = incoming_message.decode()
 
-
-
+print("Server: ", incoming_message)
+print("")
 
 
 
